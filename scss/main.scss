@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+$primary-color: #2274A5;
+$border-radius: 48px;
+
+
+body {
+    color: $primary-color;
+    font-family: 'Poppins', sans-serif;
+}
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 10vh ;
+    // background-image: url("https://locationpictures.s3.eu-central-1.amazonaws.com/Pictures/1620120919/125160.png") ;
+    // background-repeat: no-repeat, no-repeat;
+    // background-position: right, left; 
+
+    height: 100%;
+    width: 100%;
+    .background-img {
+        position: absolute;
+        top: 0;
+        
+    }
+    .content {
+        position: absolute;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .card-head {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 128px;
+            margin-bottom: 27px;
+
+            .price-card {
+                margin-top: 62px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                border-radius: $border-radius;
+                background-color: white;
+                height: 247.63px;
+                .price {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    h1 {
+                        position: relative;
+                        font-size: 100px;
+                        line-height: 125px;
+                        font-weight: 700;
+                        padding: 0 65px;
+                    }
+                    p {
+                        position: absolute;
+                        top: 5px;
+                        left: 37px;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 45px;
+                        line-height: 67px;
+                    }
+                }
+                p {
+                    font-weight: 600;
+                    font-size: 30px;
+                    line-height: 45px;
+                    text-transform: capitalize;
+                }
+            
+            }
+        } 
+    }
+    
+}
