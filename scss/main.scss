@@ -83,6 +83,75 @@ body {
             
             }
         } 
+        .detail {   
+        background: rgba(255, 255, 255, 0.83);
+        mix-blend-mode: normal;
+        backdrop-filter: blur(21px);
+        border-radius: $border-radius;
+        h2 {
+            font-weight: 600;
+            font-size: 60px;
+            line-height: 90px;
+            text-align: center;
+            text-transform: capitalize;
+            margin: 46px 144px;
+            span {
+                font-weight: normal;
+                font-size: 40px;
+                line-height: 60px;
+                text-align: center;
+                text-transform: capitalize;
+            }
+
+        }
+        .date {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            p:first-of-type {
+                margin-right: 16px;
+              }
+            p {
+                font-weight: 600;
+                font-size: 30px;
+                line-height: 45px;
+                text-transform: capitalize;
+            }
+            span {
+                font-weight: normal;
+                font-size: 30px;
+                line-height: 45px;
+                text-transform: capitalize;
+            }
+        }
+        .trip-way {
+           .trip-type {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 42px;
+            text-align: center;
+            text-transform: capitalize;
+            border-radius: 48px;
+            position: relative;
+         
+           }
+           .trip-type::after{
+                position: absolute;
+                content: "";
+                background: #2274A5;
+                border-radius: 48px;
+                transform: matrix(1, 0, 0, -1, 0, 0);
+                height: 1.2px;
+                width: 71.06px;
+                top: 44px;
+                right: 45%;
+
+
+           }
+
+        }
+        }
     }
     
 }
